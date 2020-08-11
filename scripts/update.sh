@@ -5,7 +5,7 @@ CONTAINERNAME=ntpd
 DOCKERREPO=theniwo
 DOCKERIMAGE=ntpd
 DOCKERTAG=latest
-DIR=$HOME/Settings/Linux/docker/build
+DIR=$HOME/Settings/Linux/scripts/docker/build
 PARAMETER="$2"
 
 function update-git(){
