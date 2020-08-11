@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-FRIENDLYNAME=Gobuntu
-CONTAINERNAME=gobuntu
-DOCKERIMAGE=gobuntu
+FRIENDLYNAME=ntpd
+CONTAINERNAME=ntpd
+DOCKERIMAGE=ntpd
 DOCKERREPO=theniwo
 DOCKERTAG=latest
 DIR=/root/Settings/Linux/scripts/docker
