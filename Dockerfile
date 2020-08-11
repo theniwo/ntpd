@@ -15,7 +15,7 @@ EXPOSE 123/udp
 HEALTHCHECK CMD pidof ntpd || exit 1
 #HEALTHCHECK CMD ntpq -np localhost || exit 1
 
-RUN apt-get update && apt-get install -y ntp && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update apt-get upgrade -y && apt-get install -y ntp && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY ./content /
 
