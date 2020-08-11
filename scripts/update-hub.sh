@@ -4,7 +4,7 @@ CONTAINERNAME=ntpd
 DOCKERIMAGE=ntpd
 DOCKERREPO=theniwo
 DOCKERTAG=latest
-DIR=/root/Settings/Linux/scripts/docker
+DIR=$HOME/Settings/Linux/scripts/docker/build
 cd $DIR/$CONTAINERNAME
 
 	echo "Committing to docker hub"
