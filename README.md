@@ -19,7 +19,7 @@ docker run -d \
 # Testing
 ```
 ntpq -np IP
-ntpdate -n IP
+ntpdate -q IP
 ```
 
 **CONTACT**
