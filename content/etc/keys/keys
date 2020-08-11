@@ -1,0 +1,11 @@
+#
+# PLEASE DO NOT USE THE DEFAULT VALUES HERE.
+#
+# 1 = the key value; 			1 - 65535, multiple keys possible
+# M = the type of key; 			M = MD4 ASCII
+# key = the actual key or password;	Max 20-character printable ASCII string or a 40-character hex string
+# For more information please see man 5 ntp_auth
+
+#65535  M  akey
+#1      M  pass
+1       M  J398KT36HkuRUx2xfzUy
