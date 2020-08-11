@@ -8,14 +8,20 @@ WORKDIR /
 
 ENV DEBIAN_FRONTEND noninteractive
 
-ENV TZ=Europe/Berlin
+ENV TZ=UTC
 
 EXPOSE 123/udp
 
 HEALTHCHECK CMD pidof ntpd || exit 1
 #HEALTHCHECK CMD ntpq -np localhost || exit 1
 
-RUN apt-get update apt-get upgrade -y && apt-get install -y ntp && apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install -y ntp
+RUN apt-get autoremove -y
+RUN apt-get autoclean -y
+RUN apt-get clean -y
+RUN rm -rf /var/lib/apt/lists/*
 
 COPY ./content /
 
