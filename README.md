@@ -6,7 +6,7 @@ Network Time Daemon
 
 ```
 docker run -d \
-        --name=ntp \
+        --name=ntpd \
         --restart=always \
         --publish=123:123/udp \
         --cap-add=SYS_TIME \
