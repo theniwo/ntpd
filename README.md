@@ -3,6 +3,7 @@ Network Time Daemon
 
 # Usage
 
+Change the TZ-Variable to your timezone.
 
 ```
 docker run -d \
@@ -13,7 +14,17 @@ docker run -d \
         --memory 64M \
         --cpu-quota "25000" \
         -e TZ=Europe/Berlin \
+	-v ntpd_logs:/var/log \
         theniwo/ntpd
+```
+
+This ntp.conf is configured for a "192.168.1.0/24" network. If you have a different network,
+you have to provide your own ntp.conf like in this example:
+
+```
+	[...]
+	-v ./ntp.conf:/etc/ntp.conf \
+	[...]
 ```
 
 # Testing

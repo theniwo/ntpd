@@ -12,8 +12,8 @@ ENV TZ=UTC
 
 EXPOSE 123/udp
 
-HEALTHCHECK CMD pidof ntpd || exit 1
-#HEALTHCHECK CMD ntpq -np localhost || exit 1
+#HEALTHCHECK CMD pidof ntpd || exit 1
+HEALTHCHECK CMD ntpq -np localhost || exit 1
 
 RUN apt-get update
 RUN apt-get upgrade -y
