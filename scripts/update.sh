@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source env
+. env
 DIR=$HOME/Settings/Linux/scripts/docker/build
 PARAMETER="$2"
 
