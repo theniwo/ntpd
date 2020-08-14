@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
-
-FRIENDLYNAME=NTPD
-CONTAINERNAME=ntpd
-DOCKERREPO=theniwo
-DOCKERIMAGE=ntpd
-DOCKERTAG=latest
+source ./env
 DIR=$HOME/Settings/Linux/scripts/docker/build
 PARAMETER="$2"
 
